@@ -1,0 +1,522 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background: #000;
+    color: #fff;
+}
+/* (((NAVIGATION BAR))) */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+    background: rgba(0, 0, 0, 0.85);
+    border-bottom: 1px solid #1f1f1f;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo img {
+    height: 45px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #e50914;
+}
+/* (((HERO SECTION))) */
+.hero {
+    height: 90vh;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.9)
+    ),
+    url("../images/home bg.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 700px;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    letter-spacing: 4px;
+    color: #e50914;
+    margin-bottom: 20px;
+    text-shadow: 0 0 15px rgba(229, 9, 20, 0.6);
+}
+
+.hero p {
+    font-size: 18px;
+    color: #ccc;
+    margin-bottom: 35px;
+}
+.hero-btns {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn {
+    padding: 14px 28px;
+    border: 2px solid #e50914;
+    background: transparent;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: #e50914;
+    box-shadow: 0 0 20px rgba(229, 9, 20, 0.7);
+}
+/* (((WHY))) */
+.why {
+    padding: 70px 60px;
+    background: #050505;
+    text-align: center;
+}
+
+.why h2 {
+    font-size: 32px;
+    color: #e50914;
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+}
+
+.why-box {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.why-card {
+    width: 220px;
+    padding: 30px 20px;
+    border: 1px solid #1f1f1f;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.03);
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.why-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px rgba(229, 9, 20, 0.4);
+    border-color: #e50914;
+}
+/* (((FOOTER))) */
+footer {
+    background: #000;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #1f1f1f;
+}
+
+footer p {
+    font-size: 14px;
+    color: #777;
+    letter-spacing: 1px;
+}
+/* (((DESTINATIONS))) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: radial-gradient(circle at top, #0b0f1a, #000000 70%);
+    color: #ffffff;
+    overflow-x: hidden;
+}
+.destinations {
+    padding: 60px 50px;
+}
+
+.destinations h2 {
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #ff003c;
+    letter-spacing: 1px;
+    text-shadow:
+        0 0 5px rgba(255,0,60,0.6),
+        0 0 15px rgba(255,0,60,0.4);
+}
+/* (((FOXICO))) */
+.slider {
+    display: flex;
+    gap: 28px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 25px;
+}
+
+.slider::-webkit-scrollbar {
+    height: 7px;
+}
+
+.slider::-webkit-scrollbar-track {
+    background: #0b0f1a;
+}
+
+.slider::-webkit-scrollbar-thumb {
+    background: linear-gradient(90deg, #ff003c, #ff0055);
+    border-radius: 10px;
+}
+.card {
+    min-width: 290px;
+    background: linear-gradient(180deg, #0e1324, #090c18);
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    scroll-snap-align: start;
+    border: 1px solid rgba(255,255,255,0.06);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    box-shadow:
+        0 0 20px rgba(255,0,60,0.7),
+        0 0 50px rgba(255,0,60,0.4);
+}
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    filter: brightness(0.9) contrast(1.1);
+}
+.tag {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    padding: 6px 14px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 20px;
+    background: rgba(0,0,0,0.65);
+    backdrop-filter: blur(6px);
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+}
+.card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 16px 16px 6px;
+}
+
+.card p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0 16px;
+    color: #d1d1d1;
+}
+
+.card small {
+    display: block;
+    margin: 12px 16px 20px;
+    font-size: 12px;
+    color: #9b9b9b;
+}
+.beach {
+    color: #00eaff;
+    border: 1px solid #00eaff;
+    box-shadow: 0 0 8px rgba(0,234,255,0.6);
+}
+
+.mountain {
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    box-shadow: 0 0 8px rgba(255,255,255,0.5);
+}
+
+.nature {
+    color: #00ff7f;
+    border: 1px solid #00ff7f;
+    box-shadow: 0 0 8px rgba(0,255,127,0.5);
+}
+
+.city {
+    color: #ffd700;
+    border: 1px solid #ffd700;
+    box-shadow: 0 0 8px rgba(255,215,0,0.6);
+}
+
+.international {
+    color: #ff6ec7;
+    border: 1px solid #ff6ec7;
+    box-shadow: 0 0 8px rgba(255,110,199,0.6);
+}
+
+.adventure {
+    color: #ff8c00;
+    border: 1px solid #ff8c00;
+    box-shadow: 0 0 8px rgba(255,140,0,0.6);
+}
+/* (((CONTACT))) */
+.contact-page {
+    background: radial-gradient(circle at top, #0b0f1a, #000 75%);
+    color: #ffffff;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+.contact-page .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: #081024;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.contact-page .logo img {
+    height: 45px;
+}
+
+.contact-page .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.contact-page .nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.contact-page .nav-links a:hover {
+    color: #ff003c;
+}
+
+.contact-page .nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 2px;
+    background: #ff003c;
+    transition: width 0.3s;
+}
+
+.contact-page .nav-links a:hover::after {
+    width: 100%;
+}
+.contact-page .contact-section {
+    max-width: 600px;
+    margin: 80px auto;
+    padding: 40px;
+    background: linear-gradient(180deg, #0e1324, #090c18);
+    border-radius: 20px;
+    box-shadow:
+        0 0 20px rgba(255,0,60,0.25),
+        0 0 50px rgba(0,0,0,0.8);
+}
+
+.contact-page .contact-section h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #ff003c;
+    text-shadow: 0 0 12px rgba(255,0,60,0.6);
+}
+
+.contact-page .contact-section p {
+    text-align: center;
+    font-size: 14px;
+    color: #cccccc;
+    margin-bottom: 30px;
+}
+/* (((FORM))) */
+.contact-page .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-page .contact-form input,
+.contact-page .contact-form textarea {
+    width: 100%;
+    padding: 14px;
+    background: #0b1020;
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 12px;
+    color: #ffffff;
+    font-size: 14px;
+    outline: none;
+}
+
+.contact-page .contact-form input::placeholder,
+.contact-page .contact-form textarea::placeholder {
+    color: #8a8a8a;
+}
+
+.contact-page .contact-form input:focus,
+.contact-page .contact-form textarea:focus {
+    border-color: #ff003c;
+    box-shadow: 0 0 10px rgba(255,0,60,0.4);
+}
+.contact-page .contact-form button {
+    margin-top: 10px;
+    padding: 14px;
+    background: linear-gradient(90deg, #ff003c, #ff004f);
+    border: none;
+    border-radius: 30px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact-page .contact-form button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 20px rgba(255,0,60,0.7);
+}
+.contact-page .footer {
+    text-align: center;
+    padding: 20px;
+    background: #081024;
+    font-size: 13px;
+    color: #9b9b9b;
+    border-top: 1px solid rgba(255,255,255,0.08);
+}
+/* (((PACKAGES))) */
+.packages-page {
+    background: radial-gradient(circle at top, #0b0f1a, #000 75%);
+    color: #ffffff;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+.packages-page .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: #081024;
+}
+
+.packages-page .logo img {
+    height: 45px;
+}
+
+.packages-page .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 28px;
+}
+
+.packages-page .nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    position: relative;
+}
+
+.packages-page .nav-links a.active,
+.packages-page .nav-links a:hover {
+    color: #f7360a;
+}
+
+.packages-page .nav-links a.active::after,
+.packages-page .nav-links a:hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 2px;
+    background: #e13015;
+}
+.packages {
+    padding: 60px 50px;
+}
+
+.packages h2 {
+    font-size: 32px;
+    margin-bottom: 35px;
+    color: #ff1500;
+}
+.package-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+.package-card {
+    background: linear-gradient(180deg, #0e1324, #090c18);
+    border-radius: 18px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0,0,0,0.6);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.package-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 25px rgba(242, 54, 7, 0.6);
+}
+
+.package-card h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.package-card p {
+    font-size: 14px;
+    margin: 8px 0;
+    color: #cfcfcf;
+}
+
+.package-card .price {
+    font-size: 18px;
+    font-weight: 600;
+    color: #e31010;
+    margin: 12px 0;
+}
+.package-card button {
+    margin-top: 15px;
+    padding: 12px 18px;
+    background: linear-gradient(90deg, #ff0400, #dd200f);
+    border: none;
+    border-radius: 25px;
+    color: #000;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.package-card button:hover {
+    box-shadow: 0 0 15px rgba(255, 60, 0, 0.8);
+}
+
