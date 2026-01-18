@@ -15,32 +15,26 @@ body {
     align-items: center;
     padding: 15px 60px;
     background: rgba(0, 0, 0, 0.85);
-    border-bottom: 1px solid #1f1f1f;
-    position: sticky;
     top: 0;
     z-index: 100;
 }
-
-.logo img {
+.logo img { 
     height: 45px;
 }
-
 .nav-links {
     display: flex;
     list-style: none;
     gap: 30px;
 }
-
 .nav-links a {
     text-decoration: none;
-    color: #fff;
+    color:white;
     font-size: 16px;
     letter-spacing: 1px;
     transition: color 0.3s ease;
 }
-
 .nav-links a:hover {
-    color: #e50914;
+    color: red;
 }
 /* (((HERO SECTION))) */
 .hero {
@@ -55,23 +49,21 @@ body {
     justify-content: center;
     text-align: center;
 }
-
 .hero-content {
     max-width: 700px;
     padding: 20px;
 }
-
 .hero h1 {
     font-size: 52px;
     letter-spacing: 4px;
-    color: #e50914;
+    color:red;
     margin-bottom: 20px;
     text-shadow: 0 0 15px rgba(229, 9, 20, 0.6);
 }
 
 .hero p {
     font-size: 18px;
-    color: #ccc;
+    color:white;
     margin-bottom: 35px;
 }
 .hero-btns {
@@ -81,16 +73,16 @@ body {
 }
 .btn {
     padding: 14px 28px;
-    border: 2px solid #e50914;
+    border: 2px solid red;
     background: transparent;
-    color: #fff;
+    color:white;
     font-size: 15px;
     cursor: pointer;
     letter-spacing: 1px;
     transition: all 0.3s ease;
 }
 .btn:hover {
-    background: #e50914;
+    background:red;
     box-shadow: 0 0 20px rgba(229, 9, 20, 0.7);
 }
 /* (((WHY))) */
@@ -102,7 +94,7 @@ body {
 
 .why h2 {
     font-size: 32px;
-    color: #e50914;
+    color: red;
     margin-bottom: 50px;
     letter-spacing: 2px;
 }
@@ -126,11 +118,11 @@ body {
 .why-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 0 25px rgba(229, 9, 20, 0.4);
-    border-color: #e50914;
+    border-color: red;
 }
 /* (((FOOTER))) */
 footer {
-    background: #000;
+    background: black;
     text-align: center;
     padding: 20px;
     border-top: 1px solid #1f1f1f;
@@ -142,134 +134,74 @@ footer p {
     letter-spacing: 1px;
 }
 /* (((DESTINATIONS))) */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-}
-
-body {
-    background: radial-gradient(circle at top, #0b0f1a, #000000 70%);
-    color: #ffffff;
-    overflow-x: hidden;
-}
 .destinations {
-    padding: 60px 50px;
+    padding: 60px 8%;
+    background: #0e0e0e;
+    color: #fff;
 }
-
 .destinations h2 {
-    font-size: 34px;
-    font-weight: 700;
+    font-size: 2.2rem;
     margin-bottom: 30px;
-    color: #ff003c;
-    letter-spacing: 1px;
-    text-shadow:
-        0 0 5px rgba(255,0,60,0.6),
-        0 0 15px rgba(255,0,60,0.4);
+    text-align: center;
 }
-/* (((FOXICO))) */
 .slider {
-    display: flex;
-    gap: 28px;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    padding-bottom: 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
 }
-.slider::-webkit-scrollbar {
-    height: 7px;
-}
-.slider::-webkit-scrollbar-track {
-    background: #0b0f1a;
-}
-.slider::-webkit-scrollbar-thumb {
-    background: linear-gradient(90deg, #ff003c, #ff0055);
-    border-radius: 10px;
+.card-link {
+    text-decoration: none;
+    color: inherit;
 }
 .card {
-    min-width: 290px;
-    background: linear-gradient(180deg, #0e1324, #090c18);
-    border-radius: 20px;
+    background: #161616;
+    border-radius: 16px;
     overflow: hidden;
     position: relative;
-    scroll-snap-align: start;
-    border: 1px solid rgba(255,255,255,0.06);
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.5);
 }
 .card:hover {
-    transform: scale(1.1);
-    box-shadow:
-        0 0 20px rgba(255,0,60,0.7),
-        0 0 50px rgba(255,0,60,0.4);
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 40px rgba(255,0,0,0.25);
 }
 .card img {
     width: 100%;
     height: 180px;
     object-fit: cover;
-    filter: brightness(0.9) contrast(1.1);
 }
 .tag {
     position: absolute;
-    top: 14px;
-    left: 14px;
-    padding: 6px 14px;
-    font-size: 12px;
-    font-weight: 600;
+    top: 15px;
+    left: 15px;
+    padding: 5px 12px;
+    font-size: 0.75rem;
     border-radius: 20px;
-    background: rgba(0,0,0,0.65);
-    backdrop-filter: blur(6px);
-    text-transform: uppercase;
-    letter-spacing: 0.6px;
-}
-.card h3 {
-    font-size: 18px;
     font-weight: 600;
-    margin: 16px 16px 6px;
+    color: #fff;
+}
+.beach { background: #ff3b3b; }
+.mountain { background: #3b82f6; }
+.nature { background: #22c55e; }
+.city { background: #a855f7; }
+.international { background: #f59e0b; }
+.adventure { background: #14b8a6; }
+.card h3 {
+    font-size: 1.2rem;
+    margin: 15px;
 }
 .card p {
-    font-size: 14px;
-    line-height: 1.5;
-    margin: 0 16px;
-    color: #d1d1d1;
+    font-size: 0.95rem;
+    margin: 0 15px 10px;
+    color: #ccc;
 }
 .card small {
     display: block;
-    margin: 12px 16px 20px;
-    font-size: 12px;
-    color: #9b9b9b;
-}
-.beach {
-    color: #00eaff;
-    border: 1px solid #00eaff;
-    box-shadow: 0 0 8px rgba(0,234,255,0.6);
-}
-.mountain {
-    color: #ffffff;
-    border: 1px solid #ffffff;
-    box-shadow: 0 0 8px rgba(255,255,255,0.5);
-}
-.nature {
-    color: #00ff7f;
-    border: 1px solid #00ff7f;
-    box-shadow: 0 0 8px rgba(0,255,127,0.5);
-}
-.city {
-    color: #ffd700;
-    border: 1px solid #ffd700;
-    box-shadow: 0 0 8px rgba(255,215,0,0.6);
-}
-.international {
-    color: #ff6ec7;
-    border: 1px solid #ff6ec7;
-    box-shadow: 0 0 8px rgba(255,110,199,0.6);
-}
-.adventure {
-    color: #ff8c00;
-    border: 1px solid #ff8c00;
-    box-shadow: 0 0 8px rgba(255,140,0,0.6);
+    margin: 0 15px 18px;
+    color: #999;
 }
 /* (((CONTACT))) */
-.contact-page {
+.contact-page { 
     background: radial-gradient(circle at top, #0b0f1a, #000 75%);
     color: #ffffff;
     font-family: 'Montserrat', Arial, sans-serif;
@@ -461,7 +393,6 @@ body {
     color: #ff1a1a;
     margin: 10px 15px;
 }
-
 .packages-page .seats {
     margin-bottom: 15px;
 }
@@ -484,29 +415,23 @@ body {
 .packages-page .package-card button:hover {
     background: #cc0000;
 }
-/* ============================
-   BOOKING PAGE ONLY
-   ============================ */
-
+/* (((BOOKING))) */
 .booking-page {
     background-color: #000;
     color: #fff;
     min-height: 100vh;
 }
-
 /* Main Section */
 .booking-page .booking-section {
     max-width: 650px;
     margin: 50px auto;
     padding: 25px;
 }
-
 /* Headings */
 .booking-page h2 {
     color: #ff1a1a;
     margin-bottom: 15px;
 }
-
 /* Itinerary List */
 .booking-page .itinerary {
     list-style: disc;
@@ -566,179 +491,116 @@ body {
 .booking-page .booking-form button:hover {
     background-color: #cc0000;
 }
-
-/* Responsive */
-@media (max-width: 768px) {
-    .booking-page .booking-section {
-        margin: 30px 15px;
-        padding: 20px;
-    }
-}
-
-
-
-/*(((PLAN YOUR TRIP PAGE ONLY)))*/
-
+/*(((PLAN YOUR TRIP)))*/
 .plan-page {
-    background: #0d0d0d;
-    color: #fff;
+    background: black;
+    color:white;
     font-family: Arial, sans-serif;
 }
-
 .plan-page .form-section {
     max-width: 720px;
     margin: 50px auto;
-    background: #111;
+    background:black;
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(229,9,20,0.25);
 }
-
 .plan-page h1 {
-    color: #e50914;
+    color:red;
     margin-bottom: 5px;
 }
-
 .plan-page p {
     color: #ccc;
     margin-bottom: 25px;
 }
-
 .plan-page label {
     display: block;
     margin-top: 15px;
     font-size: 14px;
 }
-
 .plan-page input,
 .plan-page select,
 .plan-page textarea {
     width: 100%;
     padding: 11px;
     margin-top: 6px;
-    background: #000;
+    background:black;
     border: 1px solid #333;
-    color: #fff;
+    color:white;
     border-radius: 6px;
 }
-
 .plan-page input:focus,
 .plan-page textarea:focus,
 .plan-page select:focus {
     outline: none;
     border-color: #e50914;
 }
-
 .plan-page textarea {
-    resize: vertical;
     min-height: 90px;
 }
-
 .plan-page button {
     margin-top: 25px;
     width: 100%;
     padding: 12px;
     background: #e50914;
     border: none;
-    color: #fff;
+    color:white;
     font-size: 16px;
     border-radius: 6px;
     cursor: pointer;
 }
-
 .plan-page button:hover {
-    background: #ff1f1f;
+    background:red;
 }
-
-
-/*  (((YOUR TRIPS PAGE ONLY)))*/
-
-.trips-page {
-    background: #0d0d0d;
-    color: #fff;
+/* (((ABOUT))) */
+.about-page {
+    background: black;
+    color:white;
     font-family: Arial, sans-serif;
 }
-
-.trips-page .trips-section {
-    max-width: 900px;
-    margin: 50px auto;
-}
-
-.trips-page h1 {
-    color: #e50914;
-    margin-bottom: 30px;
-}
-
-.trips-page .trip-card {
-    background: #111;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 18px rgba(229,9,20,0.25);
-}
-
-.trips-page .trip-card h2 {
-    color: #e50914;
-    margin-bottom: 15px;
-}
-
-.trips-page .trip-card p {
-    margin: 6px 0;
-    color: #ddd;
-}
-
-.trips-page .saved {
-    font-size: 14px;
-    color: #aaa;
-    margin-top: 10px;
-}
-
-.trips-page .delete-btn {
-    margin-top: 20px;
-    padding: 10px 18px;
-    background: #e50914;
-    border: none;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.trips-page .delete-btn:hover {
-    background: #ff1f1f;
-}
-/*(((YOUR TRIPS PAGE)))*/
-
-.yourtrips-page {
-    background: #000;
-    color: #fff;
-}
-.yourtrips-section {
-    padding: 50px 8%;
-}
-.yourtrips-section h2 {
-    color: #ff1a1a;
-    margin-bottom: 30px;
-}
-.trip-card {
-    background: #111;
-    border: 1px solid #ff1a1a;
-    border-radius: 15px;
+.about-section {
+    max-width: 1000px;
+    margin: 60px auto;
     padding: 20px;
-    margin-bottom: 20px;
 }
-.trip-card h3 {
-    color: #ff1a1a;
+.about-section h1 {
+    color:red;
+    text-align: center;
+}
+.about-section .intro {
+    text-align: center;
+    color:white;
+    max-width: 700px;
+    margin: 0 auto 40px;
+    font-size: 17px;
+}
+.about-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+.about-card {
+    background:rgb(55, 48, 48);
+    padding: 25px;
+    border-radius: 10px;
+}
+.about-card h2 {
+    color:red;
     margin-bottom: 10px;
 }
-.trip-card p {
+.about-card p,
+.about-card li {
+    color:white;
+    font-size: 15px;
+}
+.about-card ul {
+    padding-left: 18px;
+}
+.footer-text {
+    margin-top: 50px;
+    text-align: center;
+    color: #c1bfbf;
     font-size: 14px;
-    margin-bottom: 6px;
 }
-.trip-card button {
-    background: #ff1a1a;
-    border: none;
-    color: white;
-    padding: 8px 15px;
-    border-radius: 20px;
-    cursor: pointer;
-}
+
 
