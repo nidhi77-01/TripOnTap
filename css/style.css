@@ -5,7 +5,7 @@
 }
 body {
     font-family: 'Arial', sans-serif;
-    background: #000;
+    background:black;
     color: #fff;
 }
 /* (((NAVIGATION BAR))) */
@@ -414,82 +414,6 @@ footer p {
 
 .packages-page .package-card button:hover {
     background: #cc0000;
-}
-/* (((BOOKING))) */
-.booking-page {
-    background-color: #000;
-    color: #fff;
-    min-height: 100vh;
-}
-/* Main Section */
-.booking-page .booking-section {
-    max-width: 650px;
-    margin: 50px auto;
-    padding: 25px;
-}
-/* Headings */
-.booking-page h2 {
-    color: #ff1a1a;
-    margin-bottom: 15px;
-}
-/* Itinerary List */
-.booking-page .itinerary {
-    list-style: disc;
-    padding-left: 20px;
-    margin-bottom: 30px;
-}
-
-.booking-page .itinerary li {
-    margin-bottom: 8px;
-    color: #ddd;
-    font-size: 15px;
-}
-
-/* Form */
-.booking-page .booking-form {
-    margin-top: 10px;
-}
-
-.booking-page .booking-form label {
-    display: block;
-    margin-bottom: 6px;
-    color: #ccc;
-    font-size: 14px;
-}
-
-/* Inputs & Textarea */
-.booking-page .booking-form input,
-.booking-page .booking-form textarea {
-    width: 100%;
-    padding: 12px 14px;
-    margin-bottom: 15px;
-    border-radius: 8px;
-    border: none;
-    outline: none;
-    font-size: 14px;
-}
-
-.booking-page .booking-form textarea {
-    resize: none;
-    height: 90px;
-}
-
-/* Submit Button */
-.booking-page .booking-form button {
-    width: 100%;
-    padding: 12px;
-    background-color: #ff1a1a;
-    border: none;
-    border-radius: 25px;
-    color: #fff;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-.booking-page .booking-form button:hover {
-    background-color: #cc0000;
 }
 /*(((PLAN YOUR TRIP)))*/
 .plan-page {
