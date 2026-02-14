@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>about</title>
-    <link rel="stylesheet" href="css/about.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Your Trip</title>
+<link rel="stylesheet" href="css/booking.css">
 </head>
-<body>
-    <!-- (((NAVIGATION BAR))) -->
-    <header class="navbar">
+
+<body class="booking-page">
+<header class="navbar">
     <div class="logo">
         <img src="images/trip.png" alt="TripOnTap">
     </div>
@@ -23,43 +23,30 @@
         </ul>
     </nav>
 </header>
-<!-- ABOUT-->
-<section class="about-section">
-    <h1>About TripOnTap</h1>
-    <p class="intro">
-        TripOnTap is a modern travel planning platform designed to help users
-        plan, store, and manage their trips easily.  
-        Our goal is to make travel planning **simple, fast, and enjoyable.
-    </p>
-    <div class="about-cards">
-        <div class="about-card">
-            <h2>🌍 Our Mission</h2>
-            <p>
-                To provide travelers with an easy-to-use platform where they
-                can plan their trips, store important details, and revisit
-                their travel memories anytime.
-            </p>
-        </div>
-        <div class="about-card">
-            <h2>🚀 What We Offer</h2>
-            <ul>
-                <li>Easy trip planning form</li>
-                <li>Save trips securely using LocalStorage</li>
-                <li>View and manage previous trips</li>
-                <li>Clean and user-friendly interface</li>
-            </ul>
-        </div>
-    </div>
-    <p class="footer-text">
-        Built with ❤️ for learning, creativity, and travel lovers.
-    </p>
-</section>
-</body>
-</html>
-<!--(((FOOTER)))-->
-<footer>
-    <p>© 2025 TripOnTap | Tap. Travel. Tremble.</p>
-</footer>
-</body>
-</html>
+<section class="booking-section">
 
+    <h2 id="packageTitle"></h2>
+
+    <ul class="itinerary" id="itineraryList"></ul>
+
+    <h2>Book This Package</h2>
+
+    <form class="booking-form">
+        <input type="text" placeholder="Full Name" required>
+        <input type="number" placeholder="Age" required>
+        <input type="text" placeholder="Address" required>
+        <input type="number" placeholder="Pincode" required>
+        <input type="email" placeholder="Email" required>
+
+        <label>No. of Travellers</label>
+        <input type="number" min="1" max="10" required>
+
+        <textarea placeholder="Special Requirements (Eg. Jain food)"></textarea>
+
+        <button type="submit">Confirm Booking</button>
+    </form>
+</section>
+<script src="JS/booking.js"></script>
+
+</body>
+</html>
