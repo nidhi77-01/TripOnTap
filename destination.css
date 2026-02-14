@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background:black;
+    color: #fff;
+}
+/* (((NAVIGATION BAR))) */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+    background: rgba(0, 0, 0, 0.85);
+    top: 0;
+    z-index: 100;
+}
+.logo img { 
+    height: 45px;
+}
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+.nav-links a {
+    text-decoration: none;
+    color:white;
+    font-size: 16px;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+.nav-links a:hover {
+    color: red;
+}
+footer p {
+    font-size: 14px;
+    color: #777;
+    letter-spacing: 1px;
+}
+/* (((DESTINATIONS))) */
+.destinations {
+    padding: 60px 8%;
+    background: #0e0e0e;
+    color: #fff;
+}
+.destinations h2 {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.slider {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+.card-link {
+    text-decoration: none;
+    color: inherit;
+}
+.card {
+    background: #161616;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+}
+.card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 40px rgba(255,0,0,0.25);
+}
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+.tag {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 5px 12px;
+    font-size: 0.75rem;
+    border-radius: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+.beach { background: #ff3b3b; }
+.mountain { background: #3b82f6; }
+.nature { background: #22c55e; }
+.city { background: #a855f7; }
+.international { background: #f59e0b; }
+.adventure { background: #14b8a6; }
+.card h3 {
+    font-size: 1.2rem;
+    margin: 15px;
+}
+.card p {
+    font-size: 0.95rem;
+    margin: 0 15px 10px;
+    color: #ccc;
+}
+.card small {
+    display: block;
+    margin: 0 15px 18px;
+    color: #999;
+}

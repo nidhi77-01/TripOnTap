@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background:black;
+    color: #fff;
+}
+/* (((NAVIGATION BAR))) */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+    background: rgba(0, 0, 0, 0.85);
+    top: 0;
+    z-index: 100;
+}
+.logo img { 
+    height: 45px;
+}
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+.nav-links a {
+    text-decoration: none;
+    color:white;
+    font-size: 16px;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+.nav-links a:hover {
+    color: red;
+}
+footer p {
+    font-size: 14px;
+    color: #777;
+    letter-spacing: 1px;
+}
+
+/*(((PLAN YOUR TRIP)))*/
+.plan-page {
+    background: black;
+    color:white;
+    font-family: Arial, sans-serif;
+}
+.plan-page .form-section {
+    max-width: 720px;
+    margin: 50px auto;
+    background:black;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(229,9,20,0.25);
+}
+.plan-page h1 {
+    color:red;
+    margin-bottom: 5px;
+}
+.plan-page p {
+    color: #ccc;
+    margin-bottom: 25px;
+}
+.plan-page label {
+    display: block;
+    margin-top: 15px;
+    font-size: 14px;
+}
+.plan-page input,
+.plan-page select,
+.plan-page textarea {
+    width: 100%;
+    padding: 11px;
+    margin-top: 6px;
+    background:black;
+    border: 1px solid #333;
+    color:white;
+    border-radius: 6px;
+}
+.plan-page input:focus,
+.plan-page textarea:focus,
+.plan-page select:focus {
+    outline: none;
+    border-color: #e50914;
+}
+.plan-page textarea {
+    min-height: 90px;
+}
+.plan-page button {
+    margin-top: 25px;
+    width: 100%;
+    padding: 12px;
+    background: #e50914;
+    border: none;
+    color:white;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.plan-page button:hover {
+    background:red;
+}
