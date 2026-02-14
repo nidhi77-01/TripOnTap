@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Book Your Trip</title>
-<link rel="stylesheet" href="css/booking.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="css/contact.css">
 </head>
-
-<body class="booking-page">
+<body class="contact-page">
 <header class="navbar">
     <div class="logo">
         <img src="images/trip.png" alt="TripOnTap">
@@ -23,30 +22,29 @@
         </ul>
     </nav>
 </header>
-<section class="booking-section">
 
-    <h2 id="packageTitle"></h2>
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <h2>Get in Touch</h2>
+        <p>Have questions or want to plan your next trip? Fill out the form below.</p>
 
-    <ul class="itinerary" id="itineraryList"></ul>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="text" placeholder="Subject">
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
 
-    <h2>Book This Package</h2>
-
-    <form class="booking-form">
-        <input type="text" placeholder="Full Name" required>
-        <input type="number" placeholder="Age" required>
-        <input type="text" placeholder="Address" required>
-        <input type="number" placeholder="Pincode" required>
-        <input type="email" placeholder="Email" required>
-
-        <label>No. of Travellers</label>
-        <input type="number" min="1" max="10" required>
-
-        <textarea placeholder="Special Requirements (Eg. Jain food)"></textarea>
-
-        <button type="submit">Confirm Booking</button>
-    </form>
-</section>
-<script src="JS/booking.js"></script>
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2026 Trip On Tap | All Rights Reserved</p>
+    </footer>
 
 </body>
 </html>
+
+</body>
+</html>
+
