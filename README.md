@@ -58,3 +58,12 @@ HTML
 CSS
 JavaScript 
 
+===> inspired by 
+    NETFLIX
+    SYNAPSE'26 website
+    pintrest
+
+===> creator of tripontap
+    nidhi
+    
+
